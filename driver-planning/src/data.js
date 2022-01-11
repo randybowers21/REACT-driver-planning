@@ -1,31 +1,73 @@
 const tractors = {
     363: {
-        dayDriver: 'Robby Taylor',
-        nightDriver: 'Shane Card' 
+        dayDriver: {
+            first:'Robby',
+            last: 'Taylor'
+        },
+        nightDriver: {
+            first:'Shane',
+            last: 'Card'
+        }, 
     },
     364: {
-        dayDriver: 'Jim Georgio',
-        nightDriver: 'Wes Fenus' 
+        dayDriver: {
+            first:'Jim',
+            last: 'Georgio'
+        },
+        nightDriver: {
+            first:'Wes',
+            last: 'Fenus'
+        },  
     },
     365: {
-        dayDriver: 'Open',
-        nightDriver: 'Tom Rivera' 
+        dayDriver: {
+            first:'Open',
+            last: 'Open'
+        },
+        nightDriver: {
+            first:'Tom',
+            last: 'Rivera'
+        },  
     },
     366: {
-        dayDriver: 'Tom Ellis',
-        nightDriver: 'Ted Taylor' 
+        dayDriver: {
+            first:'Tom',
+            last: 'Ellis'
+        },
+        nightDriver: {
+            first:'Ted',
+            last: 'Taylor'
+        },  
     },
     367: {
-        dayDriver: 'Dean Holmstead',
-        nightDriver: 'Open'
+        dayDriver: {
+            first:'Dean',
+            last: 'Holmstead'
+        },
+        nightDriver: {
+            first:'Open',
+            last: 'Open'
+        },
     },
     368: {
-        dayDriver: 'Open',
-        nightDriver: 'Ed Young' 
+        dayDriver: {
+            first:'Open',
+            last: 'Open'
+        },
+        nightDriver: {
+            first:'Ed',
+            last: 'Young'
+        }, 
     },
     369: {
-        dayDriver: 'Mike Farris',
-        nightDriver: 'Open' 
+        dayDriver: {
+            first:'Mike',
+            last: 'Farris'
+        },
+        nightDriver: {
+            first:'Open',
+            last: 'Open'
+        },  
     },
 }
 

@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Dropdown from '../Dropdown';
+import Row from './Row';
 
 function Header(props) {
     const [currentTractor, setCurrentTractor] = useState(363)
@@ -25,12 +26,22 @@ function Header(props) {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                        <td>{tractor.dayDriver}</td>
-                            <td>
-                                <Dropdown options={planningOptions} />
-                            </td>
-                        </tr>
+                        <Row 
+                            driver={`${tractor.dayDriver.first} ${tractor.dayDriver.last}`}
+                            planningOptions={planningOptions}
+                        />
+                        <Row
+                            driver={`${tractor.dayDriver.first} Return`}
+                            planningOptions={planningOptions}
+                        />
+                        <Row 
+                            driver={`${tractor.nightDriver.first} ${tractor.nightDriver.last}`}
+                            planningOptions={planningOptions}
+                        />
+                        <Row
+                            driver={`${tractor.nightDriver.first} Return`}
+                            planningOptions={planningOptions}
+                        />
                     </tbody>
                 </table>
         </div>
